@@ -61,6 +61,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libboost_serialization", "t
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libboost_wserialization", "thirdparty\boost_1_80_0\libs\serialization\libboost_wserialization.vcxproj", "{BE401E3B-3649-3BB4-9039-D37AE7448DAA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libboost_chrono", "thirdparty\boost_1_80_0\libs\chrono\libboost_chrono.vcxproj", "{AF064F16-42B9-32E3-A74B-C5CFDB43ADD9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -179,6 +181,10 @@ Global
 		{BE401E3B-3649-3BB4-9039-D37AE7448DAA}.Debug|x64.Build.0 = Debug|x64
 		{BE401E3B-3649-3BB4-9039-D37AE7448DAA}.Release|x64.ActiveCfg = Release|x64
 		{BE401E3B-3649-3BB4-9039-D37AE7448DAA}.Release|x64.Build.0 = Release|x64
+		{AF064F16-42B9-32E3-A74B-C5CFDB43ADD9}.Debug|x64.ActiveCfg = Debug|x64
+		{AF064F16-42B9-32E3-A74B-C5CFDB43ADD9}.Debug|x64.Build.0 = Debug|x64
+		{AF064F16-42B9-32E3-A74B-C5CFDB43ADD9}.Release|x64.ActiveCfg = Release|x64
+		{AF064F16-42B9-32E3-A74B-C5CFDB43ADD9}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -212,6 +218,7 @@ Global
 		{31BD94A2-B7E9-37CD-914E-33A98DE3BF6C} = {8851CF10-A1A4-4CCD-BC68-E7A5B6737D31}
 		{811E43FB-5861-30E6-8817-9B3E09402F53} = {8851CF10-A1A4-4CCD-BC68-E7A5B6737D31}
 		{BE401E3B-3649-3BB4-9039-D37AE7448DAA} = {8851CF10-A1A4-4CCD-BC68-E7A5B6737D31}
+		{AF064F16-42B9-32E3-A74B-C5CFDB43ADD9} = {8851CF10-A1A4-4CCD-BC68-E7A5B6737D31}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A8CEE52-492A-4393-9DD8-1A14948800DE}
