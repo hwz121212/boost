@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\chrono\src\chrono.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\chrono\src\process_cpu_clocks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\chrono\src\thread_clock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\chrono\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5A7C84BB-4033-32E7-8A43-5BEDF0CCC9CA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
