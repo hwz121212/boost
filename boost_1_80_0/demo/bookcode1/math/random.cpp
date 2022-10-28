@@ -12,11 +12,7 @@
 #include <boost/random.hpp>
 using namespace boost;
 
-#ifdef _DEBUG
-#pragma comment(lib, "libboost_random-vc141-mt-gd-x64-1_79.lib")
-#else
-#pragma comment(lib, "libboost_random-vc141-mt-x64-1_79.lib")
-#endif
+
 
 //////////////////////////////////////////
 

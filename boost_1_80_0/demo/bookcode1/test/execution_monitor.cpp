@@ -7,17 +7,6 @@ using namespace std;
 #include <boost/test/utils/basic_cstring/io.hpp>
 using namespace boost;
 
-#ifdef _DEBUG
-
-#pragma comment(lib, "libboost_unit_test_framework-vc141-mt-gd-x64-1_79.lib")
-//#pragma comment(lib, "libboost_unit_test_framework-vc141-mt-sgd-x64-1_79.lib")
-
-#else
-
-#pragma comment(lib, "libboost_unit_test_framework-vc141-mt-x64-1_79.lib")
-//#pragma comment(lib, "libboost_unit_test_framework-vc141-mt-s-x64-1_79.lib")
-
-#endif
 
 //////////////////////////////////////////
 

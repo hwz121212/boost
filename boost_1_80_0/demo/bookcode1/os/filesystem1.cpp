@@ -12,11 +12,6 @@ using namespace boost::filesystem;
 namespace fs = boost::filesystem;
 
 
-#ifdef _DEBUG
-#pragma comment(lib, "libboost_filesystem-vc141-mt-gd-x64-1_79.lib")
-#else
-#pragma comment(lib, "libboost_filesystem-vc141-mt-x64-1_79.lib")
-#endif
 
 //////////////////////////////////////////
 void case1()

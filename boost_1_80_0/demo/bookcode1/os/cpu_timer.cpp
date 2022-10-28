@@ -11,17 +11,6 @@ using namespace std;
 using namespace boost::timer;
 
 
-#ifdef _DEBUG
-#pragma comment(lib, "libboost_timer-vc141-mt-gd-x64-1_79.lib")
-#else
-#pragma comment(lib, "libboost_timer-vc141-mt-x64-1_79.lib")
-#endif
-
-#ifdef _DEBUG
-#pragma comment(lib, "libboost_chrono-vc141-mt-gd-x64-1_79.lib")
-#else
-#pragma comment(lib, "libboost_chrono-vc141-mt-x64-1_79.lib")
-#endif
 
 //////////////////////////////////////////
 void case1()

@@ -12,11 +12,6 @@ using namespace std;
 using namespace boost::program_options;
 
 
-#ifdef _DEBUG
-#pragma comment(lib, "libboost_program_options-vc141-mt-gd-x64-1_79.lib")
-#else
-#pragma comment(lib, "libboost_program_options-vc141-mt-x64-1_79.lib")
-#endif
 
 //////////////////////////////////////////
 int case1(int argc, char* argv[])
