@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <root1>
+        <root11 A="Tcp" B="" C=""/>
+        <root11 A="Tcp" B="" C=""/>
+    </root1>
+    <root2>
+        <root21 B="3106"/>
+    </root2>
+    <root3>
+        <root31>123456789</root31>
+        <root32>4444</root32>
+        <root33/>
+        <root34/>
+        <root35/>
+    </root3>
+</root>
