@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\windbg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6B445D21-D8B6-31B3-903D-E9C7FCAC680C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

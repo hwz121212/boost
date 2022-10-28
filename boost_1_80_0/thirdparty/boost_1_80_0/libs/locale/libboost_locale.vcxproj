@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{41FD9711-0BA3-3A75-94FC-425DE6DFA8AC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>libboost_locale</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\boost_1_80_0;src</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_LOCALE_NO_LIB;_CRT_SECURE_NO_WARNINGS;BOOST_LOCALE_STATIC_LINK;BOOST_LOCALE_NO_POSIX_BACKEND=1</PreprocessorDefinitions>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\boost_1_80_0;src</AdditionalIncludeDirectories>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_LOCALE_NO_LIB;_CRT_SECURE_NO_WARNINGS;BOOST_LOCALE_STATIC_LINK;BOOST_LOCALE_NO_POSIX_BACKEND=1</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\boost\locale\encoding\codepage.cpp" />
+    <ClInclude Include="src\boost\locale\encoding\conv.hpp" />
+    <None Include="src\boost\locale\encoding\iconv_codepage.ipp">
+    </None>
+    <None Include="src\boost\locale\encoding\uconv_codepage.ipp">
+    </None>
+    <None Include="src\boost\locale\encoding\wconv_codepage.ipp">
+    </None>
+    <ClCompile Include="src\boost\locale\shared\date_time.cpp" />
+    <ClCompile Include="src\boost\locale\shared\format.cpp" />
+    <ClCompile Include="src\boost\locale\shared\formatting.cpp" />
+    <ClCompile Include="src\boost\locale\shared\generator.cpp" />
+    <ClCompile Include="src\boost\locale\shared\ids.cpp" />
+    <ClCompile Include="src\boost\locale\shared\localization_backend.cpp" />
+    <ClCompile Include="src\boost\locale\shared\message.cpp" />
+    <ClCompile Include="src\boost\locale\shared\mo_lambda.cpp" />
+    <ClCompile Include="src\boost\locale\util\codecvt_converter.cpp" />
+    <ClCompile Include="src\boost\locale\util\default_locale.cpp" />
+    <ClCompile Include="src\boost\locale\util\info.cpp" />
+    <ClCompile Include="src\boost\locale\util\locale_data.cpp" />
+    <ClInclude Include="src\boost\locale\util\locale_data.hpp" />
+    <ClInclude Include="src\boost\locale\util\numeric.hpp" />
+    <ClInclude Include="src\boost\locale\util\timezone.hpp" />
+    <ClInclude Include="src\boost\locale\std\all_generator.hpp" />
+    <ClCompile Include="src\boost\locale\std\codecvt.cpp" />
+    <ClCompile Include="src\boost\locale\std\collate.cpp">
+      <ObjectFileName>$(IntDir)/src/boost/locale/std/collate.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\boost\locale\std\converter.cpp">
+      <ObjectFileName>$(IntDir)/src/boost/locale/std/converter.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\boost\locale\std\numeric.cpp">
+      <ObjectFileName>$(IntDir)/src/boost/locale/std/numeric.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\boost\locale\std\std_backend.cpp" />
+    <ClInclude Include="src\boost\locale\std\std_backend.hpp" />
+    <ClInclude Include="src\boost\locale\win32\all_generator.hpp" />
+    <ClInclude Include="src\boost\locale\win32\api.hpp" />
+    <ClCompile Include="src\boost\locale\win32\collate.cpp">
+      <ObjectFileName>$(IntDir)/src/boost/locale/win32/collate.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\boost\locale\win32\converter.cpp">
+      <ObjectFileName>$(IntDir)/src/boost/locale/win32/converter.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\boost\locale\win32\numeric.cpp">
+      <ObjectFileName>$(IntDir)/src/boost/locale/win32/numeric.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\boost\locale\win32\win_backend.cpp" />
+    <ClInclude Include="src\boost\locale\win32\win_backend.hpp" />
+    <ClCompile Include="src\boost\locale\win32\lcid.cpp" />
+    <ClInclude Include="src\boost\locale\win32\lcid.hpp" />
+    <ClCompile Include="src\boost\locale\util\gregorian.cpp" />
+    <ClInclude Include="src\boost\locale\util\gregorian.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E6DF6DD5-E9D9-3E77-B699-66DE367DE430}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>libboost_math-compile_tests</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\boost_1_80_0</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS</PreprocessorDefinitions>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\boost_1_80_0</AdditionalIncludeDirectories>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ccmath_abs_incl_test.cpp" />
+    <ClCompile Include="ccmath_ceil_incl_test.cpp" />
+    <ClCompile Include="ccmath_copysign_incl_test.cpp" />
+    <ClCompile Include="ccmath_div_incl_test.cpp" />
+    <ClCompile Include="ccmath_fdim_incl_test.cpp" />
+    <ClCompile Include="ccmath_floor_incl_test.cpp" />
+    <ClCompile Include="ccmath_fma_incl_test.cpp" />
+    <ClCompile Include="ccmath_fmax_incl_test.cpp" />
+    <ClCompile Include="ccmath_fmin_incl_test.cpp" />
+    <ClCompile Include="ccmath_fmod_incl_test.cpp" />
+    <ClCompile Include="ccmath_fpclassify_incl_test.cpp" />
+    <ClCompile Include="ccmath_frexp_incl_test.cpp" />
+    <ClCompile Include="ccmath_ilogb_incl_test.cpp" />
+    <ClCompile Include="ccmath_isfinite_incl_test.cpp" />
+    <ClCompile Include="ccmath_isgreater_incl_test.cpp" />
+    <ClCompile Include="ccmath_isgreaterequal_incl_test.cpp" />
+    <ClCompile Include="ccmath_isinf_incl_test.cpp" />
+    <ClCompile Include="ccmath_isless_incl_test.cpp" />
+    <ClCompile Include="ccmath_islessequal_incl_test.cpp" />
+    <ClCompile Include="ccmath_isnan_incl_test.cpp" />
+    <ClCompile Include="ccmath_isnormal_incl_test.cpp" />
+    <ClCompile Include="ccmath_isunordered_incl_test.cpp" />
+    <ClCompile Include="ccmath_ldexp_incl_test.cpp" />
+    <ClCompile Include="ccmath_logb_incl_test.cpp" />
+    <ClCompile Include="ccmath_modf_incl_test.cpp" />
+    <ClCompile Include="ccmath_remainder_incl_test.cpp" />
+    <ClCompile Include="ccmath_round_incl_test.cpp" />
+    <ClCompile Include="ccmath_scalbln_incl_test.cpp" />
+    <ClCompile Include="ccmath_scalbn_incl_test.cpp" />
+    <ClCompile Include="ccmath_sqrt_incl_test.cpp" />
+    <ClCompile Include="ccmath_trunc_incl_test.cpp" />
+    <ClCompile Include="compl_abs_incl_test.cpp" />
+    <ClCompile Include="compl_acos_incl_test.cpp" />
+    <ClCompile Include="compl_acosh_incl_test.cpp" />
+    <ClCompile Include="compl_asin_incl_test.cpp" />
+    <ClCompile Include="compl_asinh_incl_test.cpp" />
+    <ClCompile Include="compl_atan_incl_test.cpp" />
+    <ClCompile Include="compl_atanh_incl_test.cpp" />
+    <ClCompile Include="constants_incl_test.cpp" />
+    <ClCompile Include="cstdfloat_cmath_incl_test.cpp" />
+    <ClCompile Include="cstdfloat_complex_incl_test.cpp" />
+    <ClCompile Include="cstdfloat_concept_check_1.cpp" />
+    <ClCompile Include="cstdfloat_concept_check_2.cpp" />
+    <ClCompile Include="cstdfloat_concept_check_3.cpp" />
+    <ClCompile Include="cstdfloat_concept_check_4.cpp" />
+    <ClCompile Include="cstdfloat_iostream_incl_test.cpp" />
+    <ClCompile Include="cstdfloat_limits_incl_test.cpp" />
+    <ClCompile Include="cstdfloat_types_incl_test.cpp" />
+    <ClCompile Include="diff_autodiff_incl_test.cpp" />
+    <ClCompile Include="diff_finite_difference_incl_test.cpp" />
+    <ClCompile Include="diff_lanczos_smoothing_incl_test.cpp" />
+    <ClCompile Include="diff_numerical_differentiation_concept_test.cpp" />
+    <ClCompile Include="diff_numerical_differentiation_incl_test.cpp" />
+    <ClCompile Include="dist_arcsine_incl_test.cpp" />
+    <ClCompile Include="dist_bernoulli_incl_test.cpp" />
+    <ClCompile Include="dist_beta_incl_test.cpp" />
+    <ClCompile Include="dist_binomial_incl_test.cpp" />
+    <ClCompile Include="dist_cauchy_incl_test.cpp" />
+    <ClCompile Include="dist_chi_squared_incl_test.cpp" />
+    <ClCompile Include="dist_complement_incl_test.cpp" />
+    <ClCompile Include="dist_empirical_cumulative_dist_func_incl_test.cpp" />
+    <ClCompile Include="dist_exponential_incl_test.cpp" />
+    <ClCompile Include="dist_extreme_val_incl_test.cpp" />
+    <ClCompile Include="dist_find_location_incl_test.cpp" />
+    <ClCompile Include="dist_find_scale_incl_test.cpp" />
+    <ClCompile Include="dist_fisher_f_incl_test.cpp" />
+    <ClCompile Include="dist_gamma_incl_test.cpp" />
+    <ClCompile Include="dist_geometric_incl_test.cpp" />
+    <ClCompile Include="dist_hyperexponential_incl_test.cpp" />
+    <ClCompile Include="dist_hypergeo_incl_test.cpp" />
+    <ClCompile Include="dist_inv_chi_sq_incl_test.cpp" />
+    <ClCompile Include="dist_inv_gamma_incl_test.cpp" />
+    <ClCompile Include="dist_inv_gaussian_incl_test.cpp" />
+    <ClCompile Include="dist_kolmogorov_smirnov_incl_test.cpp" />
+    <ClCompile Include="dist_laplace_incl_test.cpp" />
+    <ClCompile Include="dist_logistic_incl_test.cpp" />
+    <ClCompile Include="dist_lognormal_incl_test.cpp" />
+    <ClCompile Include="dist_nc_beta_incl_test.cpp" />
+    <ClCompile Include="dist_nc_chi_squ_incl_test.cpp" />
+    <ClCompile Include="dist_nc_f_incl_test.cpp" />
+    <ClCompile Include="dist_nc_t_incl_test.cpp" />
+    <ClCompile Include="dist_neg_binom_incl_test.cpp" />
+    <ClCompile Include="dist_normal_incl_test.cpp" />
+    <ClCompile Include="dist_pareto_incl_test.cpp" />
+    <ClCompile Include="dist_poisson_incl_test.cpp" />
+    <ClCompile Include="dist_skew_norm_incl_test.cpp" />
+    <ClCompile Include="dist_students_t_incl_test.cpp" />
+    <ClCompile Include="dist_triangular_incl_test.cpp" />
+    <ClCompile Include="dist_uniform_incl_test.cpp" />
+    <ClCompile Include="dist_weibull_incl_test.cpp" />
+    <ClCompile Include="distribution_concept_check.cpp" />
+    <ClCompile Include="filters_daubechies_incl_test.cpp" />
+    <ClCompile Include="gauss_concept_test.cpp" />
+    <ClCompile Include="gauss_kronrod_concept_test.cpp" />
+    <ClCompile Include="interpolators_barycentric_rational_concept_test.cpp" />
+    <ClCompile Include="interpolators_barycentric_rational_incl_test.cpp" />
+    <ClCompile Include="interpolators_bezier_polynomial_incl_test.cpp" />
+    <ClCompile Include="interpolators_bilinear_uniform.cpp" />
+    <ClCompile Include="interpolators_cardinal_trig_incl_test.cpp" />
+    <ClCompile Include="interpolators_catmull_rom_concept_test.cpp" />
+    <ClCompile Include="interpolators_catmull_rom_incl_test.cpp" />
+    <ClCompile Include="interpolators_cubic_hermite_incl_test.cpp" />
+    <ClCompile Include="interpolators_cubic_spline_concept_test.cpp" />
+    <ClCompile Include="interpolators_cubic_spline_incl_test.cpp" />
+    <ClCompile Include="interpolators_makima_incl_test.cpp" />
+    <ClCompile Include="interpolators_pchip_incl_test.cpp" />
+    <ClCompile Include="interpolators_quintic_hermite_incl_test.cpp" />
+    <ClCompile Include="interpolators_septic_hermite_incl_test.cpp" />
+    <ClCompile Include="interpolators_vector_barycentric_rational_incl_test.cpp" />
+    <ClCompile Include="interpolators_whittaker_shannon_incl_test.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="quad_exp_sinh_concept_test.cpp" />
+    <ClCompile Include="quad_exp_sinh_incl_test.cpp" />
+    <ClCompile Include="quad_gauss_incl_test.cpp" />
+    <ClCompile Include="quad_gauss_kronrod_incl_test.cpp" />
+    <ClCompile Include="quad_naive_monte_carlo_incl_test.cpp" />
+    <ClCompile Include="quad_ooura_fourier_integrals_incl_test.cpp" />
+    <ClCompile Include="quad_sinh_sinh_concept_test.cpp" />
+    <ClCompile Include="quad_sinh_sinh_incl_test.cpp" />
+    <ClCompile Include="quad_tanh_sinh_concept_test.cpp" />
+    <ClCompile Include="quad_tanh_sinh_incl_test.cpp" />
+    <ClCompile Include="quad_trapezoidal_concept_test.cpp" />
+    <ClCompile Include="quad_trapezoidal_incl_test.cpp" />
+    <ClCompile Include="quad_wavelet_transforms_incl_test.cpp" />
+    <ClCompile Include="sf_acosh_incl_test.cpp" />
+    <ClCompile Include="sf_airy_incl_test.cpp" />
+    <ClCompile Include="sf_asinh_incl_test.cpp" />
+    <ClCompile Include="sf_atanh_incl_test.cpp" />
+    <ClCompile Include="sf_bernoulli_incl_test.cpp" />
+    <ClCompile Include="sf_bessel_deriv_incl_test.cpp" />
+    <ClCompile Include="sf_bessel_incl_test.cpp" />
+    <ClCompile Include="sf_beta_incl_test.cpp" />
+    <ClCompile Include="sf_binomial_incl_test.cpp" />
+    <ClCompile Include="sf_cbrt_incl_test.cpp" />
+    <ClCompile Include="sf_chebyshev_incl_test.cpp" />
+    <ClCompile Include="sf_chebyshev_transform_incl_test.cpp" />
+    <ClCompile Include="sf_cos_pi_incl_test.cpp" />
+    <ClCompile Include="sf_daubechies_scaling_incl_test.cpp" />
+    <ClCompile Include="sf_digamma_incl_test.cpp" />
+    <ClCompile Include="sf_ellint_1_incl_test.cpp" />
+    <ClCompile Include="sf_ellint_2_incl_test.cpp" />
+    <ClCompile Include="sf_ellint_3_incl_test.cpp" />
+    <ClCompile Include="sf_ellint_d_incl_test.cpp" />
+    <ClCompile Include="sf_ellint_rc_incl_test.cpp" />
+    <ClCompile Include="sf_ellint_rd_incl_test.cpp" />
+    <ClCompile Include="sf_ellint_rf_incl_test.cpp" />
+    <ClCompile Include="sf_ellint_rg_incl_test.cpp" />
+    <ClCompile Include="sf_ellint_rj_incl_test.cpp" />
+    <ClCompile Include="sf_erf_incl_test.cpp" />
+    <ClCompile Include="sf_expint_incl_test.cpp" />
+    <ClCompile Include="sf_expm1_incl_test.cpp" />
+    <ClCompile Include="sf_factorials_incl_test.cpp" />
+    <ClCompile Include="sf_fibonacci_incl_test.cpp" />
+    <ClCompile Include="sf_fpclassify_incl_test.cpp" />
+    <ClCompile Include="sf_gamma_incl_test.cpp" />
+    <ClCompile Include="sf_gegenbauer_incl_test.cpp" />
+    <ClCompile Include="sf_hankel_incl_test.cpp" />
+    <ClCompile Include="sf_hermite_incl_test.cpp" />
+    <ClCompile Include="sf_heuman_lambda_incl_test.cpp" />
+    <ClCompile Include="sf_hypot_incl_test.cpp" />
+    <ClCompile Include="sf_jacobi_incl_test.cpp" />
+    <ClCompile Include="sf_jacobi_theta_incl_test.cpp" />
+    <ClCompile Include="sf_jacobi_zeta_incl_test.cpp" />
+    <ClCompile Include="sf_laguerre_incl_test.cpp" />
+    <ClCompile Include="sf_lambert_w_incl_test.cpp" />
+    <ClCompile Include="sf_lanczos_incl_test.cpp" />
+    <ClCompile Include="sf_legendre_incl_test.cpp" />
+    <ClCompile Include="sf_legendre_stieltjes_concept_test.cpp" />
+    <ClCompile Include="sf_legendre_stieltjes_incl_test.cpp" />
+    <ClCompile Include="sf_log1p_incl_test.cpp" />
+    <ClCompile Include="sf_logaddexp_incl_test.cpp" />
+    <ClCompile Include="sf_logsumexp_incl_test.cpp" />
+    <ClCompile Include="sf_math_fwd_incl_test.cpp" />
+    <ClCompile Include="sf_modf_incl_test.cpp" />
+    <ClCompile Include="sf_next_incl_test.cpp" />
+    <ClCompile Include="sf_nonfinite_num_facets_incl_test.cpp" />
+    <ClCompile Include="sf_owens_t_incl_test.cpp" />
+    <ClCompile Include="sf_polygamma_incl_test.cpp" />
+    <ClCompile Include="sf_powm1_incl_test.cpp" />
+    <ClCompile Include="sf_prime_incl_test.cpp" />
+    <ClCompile Include="sf_relative_distance_incl_test.cpp" />
+    <ClCompile Include="sf_round_incl_test.cpp" />
+    <ClCompile Include="sf_rsqrt_incl_test.cpp" />
+    <ClCompile Include="sf_sign_incl_test.cpp" />
+    <ClCompile Include="sf_sin_pi_incl_test.cpp" />
+    <ClCompile Include="sf_sinc_incl_test.cpp" />
+    <ClCompile Include="sf_sinhc_incl_test.cpp" />
+    <ClCompile Include="sf_sph_harm_incl_test.cpp" />
+    <ClCompile Include="sf_sqrt1pm1_incl_test.cpp" />
+    <ClCompile Include="sf_trigamma_incl_test.cpp" />
+    <ClCompile Include="sf_trunc_incl_test.cpp" />
+    <ClCompile Include="sf_ulp_incl_test.cpp" />
+    <ClCompile Include="sf_zeta_incl_test.cpp" />
+    <ClCompile Include="stats_anderson_darling_inc_test.cpp" />
+    <ClCompile Include="stats_bivariate_inc_test.cpp" />
+    <ClCompile Include="stats_chaterjee_incl_test.cpp" />
+    <ClCompile Include="stats_linear_regression_inc_test.cpp" />
+    <ClCompile Include="stats_ljung_box_inc_test.cpp" />
+    <ClCompile Include="stats_runs_test_inc_test.cpp" />
+    <ClCompile Include="stats_signal_statistics_inc_test.cpp" />
+    <ClCompile Include="stats_t_test_inc_test.cpp" />
+    <ClCompile Include="stats_univariate_inc_test.cpp" />
+    <ClCompile Include="stats_z_test_inc_test.cpp" />
+    <ClCompile Include="std_real_concept_check.cpp" />
+    <ClCompile Include="test_traits.cpp" />
+    <ClCompile Include="tools_agm_incl_test.cpp" />
+    <ClCompile Include="tools_assert_incl_test.cpp" />
+    <ClCompile Include="tools_atomic_incl_test.cpp" />
+    <ClCompile Include="tools_big_constant_incl_test.cpp" />
+    <ClCompile Include="tools_centered_continued_fraction_incl_test.cpp" />
+    <ClCompile Include="tools_cohen_acceleration_incl_test.cpp" />
+    <ClCompile Include="tools_color_maps_incl_test.cpp" />
+    <ClCompile Include="tools_complex_incl_test.cpp" />
+    <ClCompile Include="tools_condition_numbers_incl_test.cpp" />
+    <ClCompile Include="tools_config_inc_test.cpp" />
+    <ClCompile Include="tools_convert_from_string_incl_test.cpp" />
+    <ClCompile Include="tools_cxx03_warn_incl_test.cpp" />
+    <ClCompile Include="tools_engel_expansion_incl_test.cpp" />
+    <ClCompile Include="tools_fraction_inc_test.cpp" />
+    <ClCompile Include="tools_header_deprecated_incl_test.cpp" />
+    <ClCompile Include="tools_is_detected_incl_test.cpp" />
+    <ClCompile Include="tools_luroth_expansion_incl_test.cpp" />
+    <ClCompile Include="tools_minima_inc_test.cpp" />
+    <ClCompile Include="tools_mp_incl_test.cpp" />
+    <ClCompile Include="tools_norms_incl_test.cpp" />
+    <ClCompile Include="tools_polynomial_gcd_incl_test.cpp" />
+    <ClCompile Include="tools_polynomial_inc_test.cpp" />
+    <ClCompile Include="tools_precision_inc_test.cpp" />
+    <ClCompile Include="tools_promotion_incl_test.cpp" />
+    <ClCompile Include="tools_random_vector_incl_test.cpp" />
+    <ClCompile Include="tools_rational_inc_test.cpp" />
+    <ClCompile Include="tools_real_cast_inc_test.cpp" />
+    <ClCompile Include="tools_remez_inc_test.cpp" />
+    <ClCompile Include="tools_roots_inc_test.cpp" />
+    <ClCompile Include="tools_series_inc_test.cpp" />
+    <ClCompile Include="tools_simple_continued_fraction_incl_test.cpp" />
+    <ClCompile Include="tools_solve_inc_test.cpp" />
+    <ClCompile Include="tools_stats_inc_test.cpp" />
+    <ClCompile Include="tools_test_data_inc_test.cpp" />
+    <ClCompile Include="tools_test_inc_test.cpp" />
+    <ClCompile Include="tools_test_value_incl_test.cpp" />
+    <ClCompile Include="tools_throw_exception_incl_test.cpp" />
+    <ClCompile Include="tools_toms748_inc_test.cpp" />
+    <ClCompile Include="tools_traits_incl_test.cpp" />
+    <ClCompile Include="tools_tuple_inc_test.cpp" />
+    <ClCompile Include="tools_ulps_plot_incl_test.cpp" />
+    <ClCompile Include="tools_workaround_incl_test.cpp" />
+    <ClCompile Include="tr1_incl_test.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
