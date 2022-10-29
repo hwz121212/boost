@@ -49,7 +49,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\random\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;</AdditionalIncludeDirectories>
       
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -71,7 +71,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\random\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;</AdditionalIncludeDirectories>
       
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -95,7 +95,7 @@
     
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\random\src\random_device.cpp" />
+    <ClCompile Include="src\random_device.cpp" />
   </ItemGroup>
   <ItemGroup>
     
