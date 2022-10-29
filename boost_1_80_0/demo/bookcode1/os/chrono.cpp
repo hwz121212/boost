@@ -14,9 +14,9 @@ using namespace boost;
 using namespace boost::chrono;
 
 //////////////////////////////////////////
-typedef duration<long,   ratio<30>> half_min;
-typedef duration<int,    ratio<60*15>> quater;
-typedef duration<double, ratio<3600*24>> day;
+typedef duration<long, boost::ratio<30>> half_min;
+typedef duration<int, boost::ratio<60*15>> quater;
+typedef duration<double, boost::ratio<3600*24>> day;
 
 //typedef duration<int,60*60> my_hour;
 //typedef duration<int,ratio<-10, 1000>> my_ms;
@@ -51,7 +51,7 @@ void case2()
 
     {
         seconds s(10);
-        typedef duration<double, ratio<60>> my_min;
+        typedef duration<double, boost::ratio<60>> my_min;
         my_min m(5);
         m += s;
         cout << m << endl;
