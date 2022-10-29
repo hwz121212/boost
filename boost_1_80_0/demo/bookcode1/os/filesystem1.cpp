@@ -169,9 +169,9 @@ void case8()
     using namespace boost;
     //const int GBYTES = 1000*1000*1000;          //GB，不是GiB
     space_info si = space("/home/chrono");
-    cout << si.capacity / giga::num<< endl;
-    cout << si.available / giga::num<< endl;
-    cout << si.free / giga::num<< endl;
+    cout << si.capacity / boost::giga::num<< endl;
+    cout << si.available / boost::giga::num<< endl;
+    cout << si.free / boost::giga::num<< endl;
 }
 
 //////////////////////////////////////////
