@@ -75,6 +75,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libboost_timer", "thirdpart
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libboost_thread", "thirdparty\boost_1_80_0\libs\thread\libboost_thread.vcxproj", "{1AC8FEF2-CC87-37CA-8E34-D3259FC008B7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libboost_random", "thirdparty\boost_1_80_0\libs\random\libboost_random.vcxproj", "{F0C46E99-BCBC-3229-B420-C254D10EA6B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -221,6 +223,10 @@ Global
 		{1AC8FEF2-CC87-37CA-8E34-D3259FC008B7}.Debug|x64.Build.0 = Debug|x64
 		{1AC8FEF2-CC87-37CA-8E34-D3259FC008B7}.Release|x64.ActiveCfg = Release|x64
 		{1AC8FEF2-CC87-37CA-8E34-D3259FC008B7}.Release|x64.Build.0 = Release|x64
+		{F0C46E99-BCBC-3229-B420-C254D10EA6B4}.Debug|x64.ActiveCfg = Debug|x64
+		{F0C46E99-BCBC-3229-B420-C254D10EA6B4}.Debug|x64.Build.0 = Debug|x64
+		{F0C46E99-BCBC-3229-B420-C254D10EA6B4}.Release|x64.ActiveCfg = Release|x64
+		{F0C46E99-BCBC-3229-B420-C254D10EA6B4}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -261,6 +267,7 @@ Global
 		{284AC7E3-4DA6-37BE-8C0B-D8F1AB61CC07} = {8851CF10-A1A4-4CCD-BC68-E7A5B6737D31}
 		{74EB0948-33AC-39FB-8934-3884F10BE496} = {8851CF10-A1A4-4CCD-BC68-E7A5B6737D31}
 		{1AC8FEF2-CC87-37CA-8E34-D3259FC008B7} = {8851CF10-A1A4-4CCD-BC68-E7A5B6737D31}
+		{F0C46E99-BCBC-3229-B420-C254D10EA6B4} = {8851CF10-A1A4-4CCD-BC68-E7A5B6737D31}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A8CEE52-492A-4393-9DD8-1A14948800DE}
