@@ -15,7 +15,7 @@
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
-    <ProjectName>boost_context</ProjectName>
+    <ProjectName>libboost_context</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -41,17 +41,12 @@
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)lib\$(Configuration)\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
-    
-    
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)lib\$(Configuration)\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
-    
-    
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>include;</AdditionalIncludeDirectories>
-      
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\boost_1_80_0</AdditionalIncludeDirectories>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -62,22 +57,18 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_SOURCE;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=</PreprocessorDefinitions>
-      
     </ClCompile>
-    
     <MASM>
       <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_SOURCE;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=</PreprocessorDefinitions>
       <IncludePaths>include;%(IncludePaths)</IncludePaths>
     </MASM>
-    
     <Lib>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>include;</AdditionalIncludeDirectories>
-      
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\boost_1_80_0</AdditionalIncludeDirectories>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <Optimization>MaxSpeed</Optimization>
@@ -86,22 +77,18 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_SOURCE;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=</PreprocessorDefinitions>
-      
       <DebugInformationFormat>
       </DebugInformationFormat>
     </ClCompile>
-    
     <MASM>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_SOURCE;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=</PreprocessorDefinitions>
       <IncludePaths>include;%(IncludePaths)</IncludePaths>
     </MASM>
-    
     <Lib>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    
   </ItemGroup>
   <ItemGroup>
     <MASM Include="src\asm\make_x86_64_ms_pe_masm.asm" />
@@ -110,7 +97,6 @@
     <ClCompile Include="src\windows\stack_traits.cpp" />
   </ItemGroup>
   <ItemGroup>
-    
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
