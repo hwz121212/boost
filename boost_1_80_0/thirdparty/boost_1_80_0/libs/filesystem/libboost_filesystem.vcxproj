@@ -49,7 +49,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\filesystem\include;E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\filesystem\src;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;src;</AdditionalIncludeDirectories>
       
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -72,7 +72,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\filesystem\include;E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\filesystem\src;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;src;</AdditionalIncludeDirectories>
       
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -97,16 +97,16 @@
     
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\filesystem\src\codecvt_error_category.cpp" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\filesystem\src\exception.cpp" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\filesystem\src\operations.cpp" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\filesystem\src\directory.cpp" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\filesystem\src\path.cpp" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\filesystem\src\path_traits.cpp" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\filesystem\src\portability.cpp" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\filesystem\src\unique_path.cpp" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\filesystem\src\utf8_codecvt_facet.cpp" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\filesystem\src\windows_file_codecvt.cpp" />
+    <ClCompile Include="src\codecvt_error_category.cpp" />
+    <ClCompile Include="src\exception.cpp" />
+    <ClCompile Include="src\operations.cpp" />
+    <ClCompile Include="src\directory.cpp" />
+    <ClCompile Include="src\path.cpp" />
+    <ClCompile Include="src\path_traits.cpp" />
+    <ClCompile Include="src\portability.cpp" />
+    <ClCompile Include="src\unique_path.cpp" />
+    <ClCompile Include="src\utf8_codecvt_facet.cpp" />
+    <ClCompile Include="src\windows_file_codecvt.cpp" />
   </ItemGroup>
   <ItemGroup>
     
