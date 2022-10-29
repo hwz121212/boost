@@ -49,7 +49,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\thread\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;</AdditionalIncludeDirectories>
       
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -71,7 +71,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\thread\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;</AdditionalIncludeDirectories>
       
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -95,11 +95,11 @@
     
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\thread\src\win32\thread.cpp" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\thread\src\win32\tss_dll.cpp" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\thread\src\win32\tss_pe.cpp" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\thread\src\win32\thread_primitives.cpp" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\thread\src\future.cpp" />
+    <ClCompile Include="src\win32\thread.cpp" />
+    <ClCompile Include="src\win32\tss_dll.cpp" />
+    <ClCompile Include="src\win32\tss_pe.cpp" />
+    <ClCompile Include="src\win32\thread_primitives.cpp" />
+    <ClCompile Include="src\future.cpp" />
   </ItemGroup>
   <ItemGroup>
     
