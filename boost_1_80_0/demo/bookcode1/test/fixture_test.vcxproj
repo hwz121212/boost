@@ -14,7 +14,7 @@
     <ClCompile Include="fixture_test.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
-	<PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{EB7C2361-7039-4077-A63C-22802FEC24EE}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -70,6 +70,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libboost_unit_test_framework.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -90,6 +91,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libboost_unit_test_framework.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
