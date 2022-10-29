@@ -50,7 +50,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\context\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;</AdditionalIncludeDirectories>
       
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -67,7 +67,7 @@
     
     <MASM>
       <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_SOURCE;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=</PreprocessorDefinitions>
-      <IncludePaths>E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\context\include;%(IncludePaths)</IncludePaths>
+      <IncludePaths>include;%(IncludePaths)</IncludePaths>
     </MASM>
     
     <Lib>
@@ -76,7 +76,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\context\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;</AdditionalIncludeDirectories>
       
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -93,7 +93,7 @@
     
     <MASM>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_SOURCE;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=</PreprocessorDefinitions>
-      <IncludePaths>E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\context\include;%(IncludePaths)</IncludePaths>
+      <IncludePaths>include;%(IncludePaths)</IncludePaths>
     </MASM>
     
     <Lib>
@@ -104,10 +104,10 @@
     
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\context\src\asm\make_x86_64_ms_pe_masm.asm" />
-    <MASM Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\context\src\asm\jump_x86_64_ms_pe_masm.asm" />
-    <MASM Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\context\src\asm\ontop_x86_64_ms_pe_masm.asm" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\context\src\windows\stack_traits.cpp" />
+    <MASM Include="src\asm\make_x86_64_ms_pe_masm.asm" />
+    <MASM Include="src\asm\jump_x86_64_ms_pe_masm.asm" />
+    <MASM Include="src\asm\ontop_x86_64_ms_pe_masm.asm" />
+    <ClCompile Include="src\windows\stack_traits.cpp" />
   </ItemGroup>
   <ItemGroup>
     
