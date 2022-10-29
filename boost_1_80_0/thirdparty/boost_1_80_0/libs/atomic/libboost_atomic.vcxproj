@@ -49,7 +49,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\atomic\include;E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\atomic\src;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;src;</AdditionalIncludeDirectories>
       
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -71,7 +71,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\atomic\include;E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\atomic\src;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;src;</AdditionalIncludeDirectories>
       
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -95,10 +95,10 @@
     
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\atomic\src\lock_pool.cpp" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\atomic\src\find_address_sse2.cpp" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\atomic\src\find_address_sse41.cpp" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\atomic\src\wait_on_address.cpp" />
+    <ClCompile Include="src\lock_pool.cpp" />
+    <ClCompile Include="src\find_address_sse2.cpp" />
+    <ClCompile Include="src\find_address_sse41.cpp" />
+    <ClCompile Include="src\wait_on_address.cpp" />
   </ItemGroup>
   <ItemGroup>
     
