@@ -63,6 +63,16 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libboost_wserialization", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libboost_chrono", "thirdparty\boost_1_80_0\libs\chrono\libboost_chrono.vcxproj", "{AF064F16-42B9-32E3-A74B-C5CFDB43ADD9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libboost_atomic", "thirdparty\boost_1_80_0\libs\atomic\libboost_atomic.vcxproj", "{9AE628EE-7B72-3F67-A2DC-63A747B4A161}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libboost_context", "thirdparty\boost_1_80_0\libs\context\libboost_context.vcxproj", "{7041D335-2764-3F52-9815-FA4F4AEFCBEC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libboost_coroutine", "thirdparty\boost_1_80_0\libs\coroutine\libboost_coroutine.vcxproj", "{DF72F2AA-8AA4-3B31-A0FB-F4F9884C367E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libboost_filesystem", "thirdparty\boost_1_80_0\libs\filesystem\libboost_filesystem.vcxproj", "{284AC7E3-4DA6-37BE-8C0B-D8F1AB61CC07}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libboost_graph_parallel", "thirdparty\boost_1_80_0\libs\graph_parallel\libboost_graph_parallel.vcxproj", "{9D8DEDB1-0B63-3890-A85F-3118A62B5B21}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -185,6 +195,26 @@ Global
 		{AF064F16-42B9-32E3-A74B-C5CFDB43ADD9}.Debug|x64.Build.0 = Debug|x64
 		{AF064F16-42B9-32E3-A74B-C5CFDB43ADD9}.Release|x64.ActiveCfg = Release|x64
 		{AF064F16-42B9-32E3-A74B-C5CFDB43ADD9}.Release|x64.Build.0 = Release|x64
+		{9AE628EE-7B72-3F67-A2DC-63A747B4A161}.Debug|x64.ActiveCfg = Debug|x64
+		{9AE628EE-7B72-3F67-A2DC-63A747B4A161}.Debug|x64.Build.0 = Debug|x64
+		{9AE628EE-7B72-3F67-A2DC-63A747B4A161}.Release|x64.ActiveCfg = Release|x64
+		{9AE628EE-7B72-3F67-A2DC-63A747B4A161}.Release|x64.Build.0 = Release|x64
+		{7041D335-2764-3F52-9815-FA4F4AEFCBEC}.Debug|x64.ActiveCfg = Debug|x64
+		{7041D335-2764-3F52-9815-FA4F4AEFCBEC}.Debug|x64.Build.0 = Debug|x64
+		{7041D335-2764-3F52-9815-FA4F4AEFCBEC}.Release|x64.ActiveCfg = Release|x64
+		{7041D335-2764-3F52-9815-FA4F4AEFCBEC}.Release|x64.Build.0 = Release|x64
+		{DF72F2AA-8AA4-3B31-A0FB-F4F9884C367E}.Debug|x64.ActiveCfg = Debug|x64
+		{DF72F2AA-8AA4-3B31-A0FB-F4F9884C367E}.Debug|x64.Build.0 = Debug|x64
+		{DF72F2AA-8AA4-3B31-A0FB-F4F9884C367E}.Release|x64.ActiveCfg = Release|x64
+		{DF72F2AA-8AA4-3B31-A0FB-F4F9884C367E}.Release|x64.Build.0 = Release|x64
+		{284AC7E3-4DA6-37BE-8C0B-D8F1AB61CC07}.Debug|x64.ActiveCfg = Debug|x64
+		{284AC7E3-4DA6-37BE-8C0B-D8F1AB61CC07}.Debug|x64.Build.0 = Debug|x64
+		{284AC7E3-4DA6-37BE-8C0B-D8F1AB61CC07}.Release|x64.ActiveCfg = Release|x64
+		{284AC7E3-4DA6-37BE-8C0B-D8F1AB61CC07}.Release|x64.Build.0 = Release|x64
+		{9D8DEDB1-0B63-3890-A85F-3118A62B5B21}.Debug|x64.ActiveCfg = Debug|x64
+		{9D8DEDB1-0B63-3890-A85F-3118A62B5B21}.Debug|x64.Build.0 = Debug|x64
+		{9D8DEDB1-0B63-3890-A85F-3118A62B5B21}.Release|x64.ActiveCfg = Release|x64
+		{9D8DEDB1-0B63-3890-A85F-3118A62B5B21}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -219,6 +249,11 @@ Global
 		{811E43FB-5861-30E6-8817-9B3E09402F53} = {8851CF10-A1A4-4CCD-BC68-E7A5B6737D31}
 		{BE401E3B-3649-3BB4-9039-D37AE7448DAA} = {8851CF10-A1A4-4CCD-BC68-E7A5B6737D31}
 		{AF064F16-42B9-32E3-A74B-C5CFDB43ADD9} = {8851CF10-A1A4-4CCD-BC68-E7A5B6737D31}
+		{9AE628EE-7B72-3F67-A2DC-63A747B4A161} = {8851CF10-A1A4-4CCD-BC68-E7A5B6737D31}
+		{7041D335-2764-3F52-9815-FA4F4AEFCBEC} = {8851CF10-A1A4-4CCD-BC68-E7A5B6737D31}
+		{DF72F2AA-8AA4-3B31-A0FB-F4F9884C367E} = {8851CF10-A1A4-4CCD-BC68-E7A5B6737D31}
+		{284AC7E3-4DA6-37BE-8C0B-D8F1AB61CC07} = {8851CF10-A1A4-4CCD-BC68-E7A5B6737D31}
+		{9D8DEDB1-0B63-3890-A85F-3118A62B5B21} = {8851CF10-A1A4-4CCD-BC68-E7A5B6737D31}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A8CEE52-492A-4393-9DD8-1A14948800DE}
