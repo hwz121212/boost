@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\random\src\random_device.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\random\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FC42C430-B366-388E-96A5-482C9F8FE98D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
