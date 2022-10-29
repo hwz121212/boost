@@ -36,7 +36,7 @@ int main()
     stringstream ss;
     {
         progress_timer t(ss);
-		this_thread::sleep_for(milliseconds(600));
+		boost::this_thread::sleep_for(milliseconds(600));
     }
     cout << ss.str();
 }
