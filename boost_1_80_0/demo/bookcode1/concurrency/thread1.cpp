@@ -32,20 +32,20 @@ milliseconds operator"" _ms(unsigned long long n)
 void case1()
 {
     {
-        thread t1;
+		boost::thread t1;
         assert(!t1.joinable());
 
-        thread t2([]{cout << "a thread" << endl;});
+		boost::thread t2([]{cout << "a thread" << endl;});
         assert(t2.joinable());
 
     }
 
-    thread t1,t2;
+	boost::thread t1,t2;
     cout << t1.get_id() << endl;
     assert(t1.get_id() == t2.get_id());
 
-    cout << thread::hardware_concurrency() << endl;
-    cout << thread::physical_concurrency() << endl;
+    cout << boost::thread::hardware_concurrency() << endl;
+    cout << boost::thread::physical_concurrency() << endl;
 
 }
 
@@ -62,8 +62,8 @@ void case2()
     //thread t1(dummy, 100);
     //thread t2(dummy, 500);
 
-    thread t1(bind(dummy, 100));
-    thread t2([]{dummy(500);});
+	boost::thread t1(bind(dummy, 100));
+	boost::thread t2([]{dummy(500);});
 
     //this_thread::sleep_for(200_ms);
     t1.try_join_for(100_ms);
@@ -73,12 +73,12 @@ void case2()
 //////////////////////////////////////////
 void case3()
 {
-    thread t1(dummy, 100);
+	boost::thread t1(dummy, 100);
     t1.detach();
     assert(!t1.joinable());
 
-    thread(dummy, 1000).detach();
-    this_thread::sleep_for(200_ms);
+	boost::thread(dummy, 1000).detach();
+	boost::this_thread::sleep_for(200_ms);
 }
 
 //////////////////////////////////////////
@@ -86,8 +86,8 @@ void case3()
 #include <boost/thread/scoped_thread.hpp>
 void case4()
 {
-    thread t1(dummy, 200);
-    thread t2(dummy, 300);
+	boost::thread t1(dummy, 200);
+	boost::thread t2(dummy, 300);
 
     thread_guard<detach> g1(t1);
     thread_guard<>       g2(t2);
@@ -97,7 +97,7 @@ void case4()
         scoped_thread<>       t2(dummy, 20);
     }
 
-    this_thread::sleep_for(100_ms);
+	boost::this_thread::sleep_for(100_ms);
 }
 
 //////////////////////////////////////////
@@ -108,7 +108,7 @@ try
     {
         //this_thread::sleep_for(400_ms);
         cout << i << endl;
-        this_thread::interruption_point();
+		boost::this_thread::interruption_point();
     }
 }
 catch(const thread_interrupted& )
@@ -118,7 +118,7 @@ catch(const thread_interrupted& )
 
 void case5()
 {
-    thread t(to_interrupt,10);
+	boost::thread t(to_interrupt,10);
     //this_thread::sleep_for(1_s);
 
     t.interrupt();
@@ -131,7 +131,7 @@ void case5()
 void to_interrupt2(int x)
 try
 {
-    using namespace this_thread;
+    using namespace boost::this_thread;
     assert(interruption_enabled());
 
     for (int i = 0;i < x; ++i)
@@ -139,14 +139,14 @@ try
         disable_interruption di;
         assert(!interruption_enabled());
         cout << i << endl;
-        cout << this_thread::interruption_requested() << endl;
-        this_thread::interruption_point();
+        cout << boost::this_thread::interruption_requested() << endl;
+		boost::this_thread::interruption_point();
 
         restore_interruption ri(di);
         assert(interruption_enabled());
         cout << "can interrupted" << endl;
-        cout << this_thread::interruption_requested() << endl;
-        this_thread::interruption_point();
+        cout << boost::this_thread::interruption_requested() << endl;
+		boost::this_thread::interruption_point();
     }
 
     assert(interruption_enabled());
@@ -158,7 +158,7 @@ catch(const thread_interrupted& )
 
 void case6()
 {
-    thread t(to_interrupt2,10);
+	boost::thread t(to_interrupt2,10);
     //this_thread::sleep_for(1_s);
 
     t.interrupt();

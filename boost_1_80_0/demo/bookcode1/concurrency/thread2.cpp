@@ -37,9 +37,9 @@ milliseconds operator"" _ms(unsigned long long n)
 class buffer
 {
     private:
-        mutex mu;
-        condition_variable_any cond_put;
-        condition_variable_any cond_get;
+		boost::mutex mu;
+		boost::condition_variable_any cond_put;
+		boost::condition_variable_any cond_get;
 
         stack<int> stk;
         int un_read,capacity;
@@ -202,7 +202,7 @@ void case4()
     async(func, f5);
     async(func, f5);
 
-    this_thread::sleep_for(100_ms);
+	boost::this_thread::sleep_for(100_ms);
 
     assert(f5.valid());
 }
@@ -216,7 +216,7 @@ void case5()
 
     promise<int> p;
 
-    thread(func, 10, boost::ref(p)).detach();
+	boost::thread(func, 10, boost::ref(p)).detach();
 
     auto f = p.get_future();
     cout << f.get() << endl;
@@ -258,7 +258,7 @@ void case7()
     async(func);
     async(func);
 
-    this_thread::sleep_for(100_ms);
+	boost::this_thread::sleep_for(100_ms);
 }
 
 

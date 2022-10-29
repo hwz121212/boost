@@ -35,7 +35,7 @@ milliseconds operator"" _ms(unsigned long long n)
 
 void case1()
 {
-    mutex mu;
+	boost::mutex mu;
     try
     {
         mu.lock();
@@ -48,7 +48,7 @@ void case1()
     }
 
     {
-        lock_guard<mutex> g(mu);
+		boost::lock_guard<boost::mutex> g(mu);
         cout  << "some operations" << endl;
     }
 }
@@ -56,7 +56,7 @@ void case1()
 //////////////////////////////////////////
 void case2()
 {
-    timed_mutex mu;
+	boost::timed_mutex mu;
 
     auto flag = mu.try_lock_for(100_ms);
     if(flag)
@@ -68,7 +68,7 @@ void case2()
     {
         if(mu.try_lock_for(100_ms))
         {
-            lock_guard<timed_mutex> g(mu, adopt_lock);
+			boost::lock_guard<boost::timed_mutex> g(mu, boost::adopt_lock);
             cout << "lock timed mutex" << endl;
         }
     }
@@ -78,14 +78,14 @@ void case2()
 #include <boost/thread/lock_factories.hpp>
 
 template <typename Lockable, typename D>
-unique_lock<Lockable> my_make_lock(Lockable& mtx, D d)
+boost::unique_lock<Lockable> my_make_lock(Lockable& mtx, D d)
 {
-    return unique_lock<Lockable> (mtx, d);
+    return boost::unique_lock<Lockable> (mtx, d);
 }
 
 void case3()
 {
-    mutex mu;
+	boost::mutex mu;
 
     {
         auto g = make_unique_lock(mu);
@@ -94,7 +94,7 @@ void case3()
     }
 
     {
-        auto g = make_unique_lock(mu, defer_lock);
+        auto g = make_unique_lock(mu, boost::defer_lock);
         assert(!g);
 
         assert(g.try_lock());
@@ -103,7 +103,7 @@ void case3()
         cout  << "some operations" << endl;
     }
 
-    timed_mutex tm;
+	boost::timed_mutex tm;
     //typedef unique_lock<timed_mutex> lock_type;
 
     {
@@ -116,13 +116,13 @@ void case3()
     }
 
     auto g = make_unique_locks(mu, tm);
-    assert(std::tuple_size<decltype(g)>::value == 2);
+	assert(std::tuple_size<decltype(g)>::value == 2);
 }
 
 //////////////////////////////////////////
 #include <boost/atomic.hpp>
 #include <boost/thread/lockable_adapter.hpp>
-class account final : public lockable_adapter<mutex>
+class account final : public lockable_adapter<boost::mutex>
 {
 private:
 	boost::atomics::atomic<int> m_money{0};
@@ -158,7 +158,7 @@ void case4()
     }
 
     {
-        auto b = make_unique_lock(a, try_to_lock);
+        auto b = make_unique_lock(a, boost::try_to_lock);
         if(b)
         {
             a.withdraw(a.sum());
@@ -170,18 +170,18 @@ void case4()
 //////////////////////////////////////////
 void case5()
 {
-    mutex m1, m2;
+	boost::mutex m1, m2;
 
     {
-        auto g1 = make_unique_lock(m1, adopt_lock);
-        auto g2 = make_unique_lock(m2, adopt_lock);
+        auto g1 = make_unique_lock(m1, boost::adopt_lock);
+        auto g2 = make_unique_lock(m2, boost::adopt_lock);
 
         lock(m1, m2);
     }
 
     {
-        auto g1 = make_unique_lock(m1, defer_lock);
-        auto g2 = make_unique_lock(m2, defer_lock);
+        auto g1 = make_unique_lock(m1, boost::defer_lock);
+        auto g2 = make_unique_lock(m2, boost::defer_lock);
 
         try_lock(g1, g2);
     }
@@ -191,14 +191,14 @@ void case5()
 #include <boost/thread/lockable_concepts.hpp>
 void case6()
 {
-    BOOST_CONCEPT_ASSERT((BasicLockable<mutex>));
-    BOOST_CONCEPT_ASSERT((Lockable<mutex>));
+    BOOST_CONCEPT_ASSERT((BasicLockable<boost::mutex>));
+    BOOST_CONCEPT_ASSERT((Lockable<boost::mutex>));
 
-    BOOST_CONCEPT_ASSERT((Lockable<timed_mutex>));
-    BOOST_CONCEPT_ASSERT((TimedLockable<timed_mutex>));
+    BOOST_CONCEPT_ASSERT((Lockable<boost::timed_mutex>));
+    BOOST_CONCEPT_ASSERT((TimedLockable<boost::timed_mutex>));
 
     BOOST_CONCEPT_ASSERT((Lockable<account>));
-    BOOST_CONCEPT_ASSERT((Lockable<lockable_adapter<mutex>>));
+    BOOST_CONCEPT_ASSERT((Lockable<lockable_adapter<boost::mutex>>));
 
     //BOOST_CONCEPT_ASSERT((Lockable<boost::atomics::atomic<int>>));
 }
@@ -214,7 +214,7 @@ class rw_data
         rw_data():m_x(0){}
         void write()
         {
-            unique_lock<shared_mutex> g(rw_mu);
+			boost::unique_lock<shared_mutex> g(rw_mu);
             ++m_x;
         }
         void read(int *x)
@@ -229,7 +229,7 @@ void writer(rw_data &d)
 {
     for (int i = 0;i < 20; ++i)
     {
-        this_thread::sleep_for(3_ms);
+		boost::this_thread::sleep_for(3_ms);
         d.write();
     }
 }
@@ -239,7 +239,7 @@ void reader(rw_data &d)
     int x;
     for (int i = 0;i < 10; ++i)
     {
-        this_thread::sleep_for(5_ms);
+		boost::this_thread::sleep_for(5_ms);
         d.read(&x);
         cout << "reader:"<< x << endl;
     }
