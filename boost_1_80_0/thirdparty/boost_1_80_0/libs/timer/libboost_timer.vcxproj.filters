@@ -1,15 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\timer\src\auto_timers_construction.cpp">
+    <ClCompile Include="src\auto_timers_construction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\timer\src\cpu_timer.cpp">
+    <ClCompile Include="src\cpu_timer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\timer\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
