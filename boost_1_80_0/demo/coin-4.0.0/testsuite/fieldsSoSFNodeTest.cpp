@@ -45,6 +45,8 @@ using namespace SIM::Coin3D::Coin::TestSuite;
 #include <Inventor/fields/SoSFNode.h>
 #include <cstring>
 #include <Inventor/nodes/SoNode.h>
+#include <Inventor/SoInput.h>
+#include <Inventor/SoDB.h>
 BOOST_AUTO_TEST_SUITE(SoSFNode_TestSuite);
 
 
