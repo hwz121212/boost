@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{79f0cecb-6b47-4e58-95a1-5fca24c67a88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8A56360F-1567-3911-B884-15185B92EF33}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ascii.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\asciitab.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\expat.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\expat_config.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\expat_external.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\iasciitab.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\internal.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\latin1tab.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\nametab.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\siphash.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utf8tab.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\winconfig.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xmlrole.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xmltok.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xmltok_impl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\xmlparse.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmlrole.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmltok.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmltok_impl.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmltok_ns.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
