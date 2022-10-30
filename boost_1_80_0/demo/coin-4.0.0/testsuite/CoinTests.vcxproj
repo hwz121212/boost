@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B27E5FD0-1231-3B51-A810-1EB872C9FA0F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>CoinTests</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)thirdparty\coin-4.0.0\include;$(SolutionDir)thirdparty\coin-4.0.0\include\Inventor\annex;$(SolutionDir)include\boost_1_79_0</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;COIN_MAKE_DLL;YY_NO_UNISTD_H;COIN_DLL</PreprocessorDefinitions>
+    </ClCompile>
+    
+    
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)thirdparty\coin-4.0.0\include;$(SolutionDir)thirdparty\coin-4.0.0\include\Inventor\annex;$(SolutionDir)include\boost_1_79_0</AdditionalIncludeDirectories>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;COIN_MAKE_DLL;YY_NO_UNISTD_H;COIN_DLL</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    
+    
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TestSuiteMain.cpp" />
+    <ClCompile Include="TestSuiteUtils.cpp" />
+    <ClCompile Include="TestSuiteMisc.cpp" />
+    <ClCompile Include="actionsSoCallbackActionTest.cpp" />
+    <ClCompile Include="actionsSoWriteActionTest.cpp" />
+    <ClCompile Include="baseSbBSPTreeTest.cpp" />
+    <ClCompile Include="baseSbBox2dTest.cpp" />
+    <ClCompile Include="baseSbBox2fTest.cpp" />
+    <ClCompile Include="baseSbBox2i32Test.cpp" />
+    <ClCompile Include="baseSbBox2sTest.cpp" />
+    <ClCompile Include="baseSbBox3i32Test.cpp" />
+    <ClCompile Include="baseSbBox3sTest.cpp" />
+    <ClCompile Include="baseSbByteBufferTest.cpp" />
+    <ClCompile Include="baseSbDPMatrixTest.cpp" />
+    <ClCompile Include="baseSbDPPlaneTest.cpp" />
+    <ClCompile Include="baseSbDPRotationTest.cpp" />
+    <ClCompile Include="baseSbImageTest.cpp" />
+    <ClCompile Include="baseSbMatrixTest.cpp" />
+    <ClCompile Include="baseSbPlaneTest.cpp" />
+    <ClCompile Include="baseSbRotationTest.cpp" />
+    <ClCompile Include="baseSbStringTest.cpp" />
+    <ClCompile Include="baseSbVec3dTest.cpp" />
+    <ClCompile Include="baseSbVec3fTest.cpp" />
+    <ClCompile Include="baseSbVec3sTest.cpp" />
+    <ClCompile Include="baseSbVec3usTest.cpp" />
+    <ClCompile Include="baseSbVec4fTest.cpp" />
+    <ClCompile Include="baseSbViewVolumeTest.cpp" />
+    <ClCompile Include="baseheapTest.cpp" />
+    <ClCompile Include="baserbptreeTest.cpp" />
+    <ClCompile Include="draggersSoTransformerDraggerTest.cpp" />
+    <ClCompile Include="fieldsSoMFBitMaskTest.cpp" />
+    <ClCompile Include="fieldsSoMFBoolTest.cpp" />
+    <ClCompile Include="fieldsSoMFColorRGBATest.cpp" />
+    <ClCompile Include="fieldsSoMFColorTest.cpp" />
+    <ClCompile Include="fieldsSoMFDoubleTest.cpp" />
+    <ClCompile Include="fieldsSoMFEngineTest.cpp" />
+    <ClCompile Include="fieldsSoMFEnumTest.cpp" />
+    <ClCompile Include="fieldsSoMFFloatTest.cpp" />
+    <ClCompile Include="fieldsSoMFInt32Test.cpp" />
+    <ClCompile Include="fieldsSoMFMatrixTest.cpp" />
+    <ClCompile Include="fieldsSoMFNameTest.cpp" />
+    <ClCompile Include="fieldsSoMFNodeTest.cpp" />
+    <ClCompile Include="fieldsSoMFPathTest.cpp" />
+    <ClCompile Include="fieldsSoMFPlaneTest.cpp" />
+    <ClCompile Include="fieldsSoMFRotationTest.cpp" />
+    <ClCompile Include="fieldsSoMFShortTest.cpp" />
+    <ClCompile Include="fieldsSoMFStringTest.cpp" />
+    <ClCompile Include="fieldsSoMFTimeTest.cpp" />
+    <ClCompile Include="fieldsSoMFUInt32Test.cpp" />
+    <ClCompile Include="fieldsSoMFUShortTest.cpp" />
+    <ClCompile Include="fieldsSoMFVec2bTest.cpp" />
+    <ClCompile Include="fieldsSoMFVec2dTest.cpp" />
+    <ClCompile Include="fieldsSoMFVec2fTest.cpp" />
+    <ClCompile Include="fieldsSoMFVec2i32Test.cpp" />
+    <ClCompile Include="fieldsSoMFVec2sTest.cpp" />
+    <ClCompile Include="fieldsSoMFVec3bTest.cpp" />
+    <ClCompile Include="fieldsSoMFVec3dTest.cpp" />
+    <ClCompile Include="fieldsSoMFVec3fTest.cpp" />
+    <ClCompile Include="fieldsSoMFVec3i32Test.cpp" />
+    <ClCompile Include="fieldsSoMFVec3sTest.cpp" />
+    <ClCompile Include="fieldsSoMFVec4bTest.cpp" />
+    <ClCompile Include="fieldsSoMFVec4dTest.cpp" />
+    <ClCompile Include="fieldsSoMFVec4fTest.cpp" />
+    <ClCompile Include="fieldsSoMFVec4i32Test.cpp" />
+    <ClCompile Include="fieldsSoMFVec4sTest.cpp" />
+    <ClCompile Include="fieldsSoMFVec4ubTest.cpp" />
+    <ClCompile Include="fieldsSoMFVec4ui32Test.cpp" />
+    <ClCompile Include="fieldsSoMFVec4usTest.cpp" />
+    <ClCompile Include="fieldsSoSFBitMaskTest.cpp" />
+    <ClCompile Include="fieldsSoSFBoolTest.cpp" />
+    <ClCompile Include="fieldsSoSFBox2dTest.cpp" />
+    <ClCompile Include="fieldsSoSFBox2fTest.cpp" />
+    <ClCompile Include="fieldsSoSFBox2i32Test.cpp" />
+    <ClCompile Include="fieldsSoSFBox2sTest.cpp" />
+    <ClCompile Include="fieldsSoSFBox3dTest.cpp" />
+    <ClCompile Include="fieldsSoSFBox3fTest.cpp" />
+    <ClCompile Include="fieldsSoSFBox3i32Test.cpp" />
+    <ClCompile Include="fieldsSoSFBox3sTest.cpp" />
+    <ClCompile Include="fieldsSoSFColorRGBATest.cpp" />
+    <ClCompile Include="fieldsSoSFColorTest.cpp" />
+    <ClCompile Include="fieldsSoSFDoubleTest.cpp" />
+    <ClCompile Include="fieldsSoSFEngineTest.cpp" />
+    <ClCompile Include="fieldsSoSFEnumTest.cpp" />
+    <ClCompile Include="fieldsSoSFFloatTest.cpp" />
+    <ClCompile Include="fieldsSoSFImage3Test.cpp" />
+    <ClCompile Include="fieldsSoSFImageTest.cpp" />
+    <ClCompile Include="fieldsSoSFInt32Test.cpp" />
+    <ClCompile Include="fieldsSoSFMatrixTest.cpp" />
+    <ClCompile Include="fieldsSoSFNameTest.cpp" />
+    <ClCompile Include="fieldsSoSFNodeTest.cpp" />
+    <ClCompile Include="fieldsSoSFPathTest.cpp" />
+    <ClCompile Include="fieldsSoSFPlaneTest.cpp" />
+    <ClCompile Include="fieldsSoSFRotationTest.cpp" />
+    <ClCompile Include="fieldsSoSFShortTest.cpp" />
+    <ClCompile Include="fieldsSoSFStringTest.cpp" />
+    <ClCompile Include="fieldsSoSFTimeTest.cpp" />
+    <ClCompile Include="fieldsSoSFTriggerTest.cpp" />
+    <ClCompile Include="fieldsSoSFUInt32Test.cpp" />
+    <ClCompile Include="fieldsSoSFUShortTest.cpp" />
+    <ClCompile Include="fieldsSoSFVec2bTest.cpp" />
+    <ClCompile Include="fieldsSoSFVec2dTest.cpp" />
+    <ClCompile Include="fieldsSoSFVec2fTest.cpp" />
+    <ClCompile Include="fieldsSoSFVec2i32Test.cpp" />
+    <ClCompile Include="fieldsSoSFVec2sTest.cpp" />
+    <ClCompile Include="fieldsSoSFVec3bTest.cpp" />
+    <ClCompile Include="fieldsSoSFVec3dTest.cpp" />
+    <ClCompile Include="fieldsSoSFVec3fTest.cpp" />
+    <ClCompile Include="fieldsSoSFVec3i32Test.cpp" />
+    <ClCompile Include="fieldsSoSFVec3sTest.cpp" />
+    <ClCompile Include="fieldsSoSFVec4bTest.cpp" />
+    <ClCompile Include="fieldsSoSFVec4dTest.cpp" />
+    <ClCompile Include="fieldsSoSFVec4fTest.cpp" />
+    <ClCompile Include="fieldsSoSFVec4i32Test.cpp" />
+    <ClCompile Include="fieldsSoSFVec4sTest.cpp" />
+    <ClCompile Include="fieldsSoSFVec4ubTest.cpp" />
+    <ClCompile Include="fieldsSoSFVec4ui32Test.cpp" />
+    <ClCompile Include="fieldsSoSFVec4usTest.cpp" />
+    <ClCompile Include="geoSoGeoCoordinateTest.cpp" />
+    <ClCompile Include="geoSoGeoElementTest.cpp" />
+    <ClCompile Include="geoSoGeoLocationTest.cpp" />
+    <ClCompile Include="geoSoGeoOriginTest.cpp" />
+    <ClCompile Include="geoSoGeoSeparatorTest.cpp" />
+    <ClCompile Include="miscSoBasePTest.cpp" />
+    <ClCompile Include="miscSoBaseTest.cpp" />
+    <ClCompile Include="miscSoDBTest.cpp" />
+    <ClCompile Include="miscSoTypeTest.cpp" />
+    <ClCompile Include="modelsTest.cpp" />
+    <ClCompile Include="modelsioincorrectTest.cpp" />
+    <ClCompile Include="nodesSoAnnotationTest.cpp" />
+    <ClCompile Include="scxmlSbStringConvertTest.cpp" />
+    <ClCompile Include="scxmlScXMLMinimumEvaluatorTest.cpp" />
+    <ClCompile Include="shadersSoFragmentShaderTest.cpp" />
+    <ClCompile Include="shadersSoGeometryShaderTest.cpp" />
+    <ClCompile Include="shadersSoShaderParameterTest.cpp" />
+    <ClCompile Include="shadersSoShaderProgramTest.cpp" />
+    <ClCompile Include="shadersSoVertexShaderTest.cpp" />
+    <ClCompile Include="shadowsSoGLShadowCullingElementTest.cpp" />
+    <ClCompile Include="shadowsSoShadowCullingTest.cpp" />
+    <ClCompile Include="shadowsSoShadowDirectionalLightTest.cpp" />
+    <ClCompile Include="shadowsSoShadowGroupTest.cpp" />
+    <ClCompile Include="shadowsSoShadowSpotLightTest.cpp" />
+    <ClCompile Include="shadowsSoShadowStyleElementTest.cpp" />
+    <ClCompile Include="shadowsSoShadowStyleTest.cpp" />
+    <ClCompile Include="soscxmlScXMLCoinEvaluatorTest.cpp" />
+    <ClCompile Include="xmldocumentTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
