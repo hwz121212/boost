@@ -23,6 +23,9 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcoin", "thirdparty\coin-4.0.0\libcoin.vcxproj", "{DBD8FF8B-4CEE-4ECE-B883-9F20334D83F5}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "coin", "thirdparty\coin-4.0.0\coin.vcxproj", "{E66678A5-413A-3DE6-9C20-0AD8B9EA9A1D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F845544D-E354-32E3-8F9F-715855ACEFC8} = {F845544D-E354-32E3-8F9F-715855ACEFC8}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

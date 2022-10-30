@@ -254,19 +254,19 @@ typedef uint32_t SbUniqueId;
 #  define COIN_DLL
 # endif
 # define COIN_STRINGIFY(str) SO__QUOTE(str)
-# ifdef COIN_DLL
-#  ifdef _DEBUG
-#   pragma comment(lib, "Coin" COIN_STRINGIFY(COIN_MAJOR_VERSION) ".lib")
-#  else
-#   pragma comment(lib, "Coin" COIN_STRINGIFY(COIN_MAJOR_VERSION) ".lib")
-#  endif
-# else
-#  ifdef _DEBUG
-#   pragma comment(lib, "libCoin" COIN_STRINGIFY(COIN_MAJOR_VERSION) ".lib")
-#  else
-#   pragma comment(lib, "libCoin" COIN_STRINGIFY(COIN_MAJOR_VERSION) ".lib")
-#  endif
-# endif
+//# ifdef COIN_DLL
+//#  ifdef _DEBUG
+//#   pragma comment(lib, "Coin" COIN_STRINGIFY(COIN_MAJOR_VERSION) ".lib")
+//#  else
+//#   pragma comment(lib, "Coin" COIN_STRINGIFY(COIN_MAJOR_VERSION) ".lib")
+//#  endif
+//# else
+//#  ifdef _DEBUG
+//#   pragma comment(lib, "libCoin" COIN_STRINGIFY(COIN_MAJOR_VERSION) ".lib")
+//#  else
+//#   pragma comment(lib, "libCoin" COIN_STRINGIFY(COIN_MAJOR_VERSION) ".lib")
+//#  endif
+//# endif
 # undef COIN_STRINGIFY
 #endif
 

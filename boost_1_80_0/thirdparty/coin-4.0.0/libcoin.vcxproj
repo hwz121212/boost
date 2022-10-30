@@ -61,7 +61,7 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>XML_STATIC;WIN32;_WINDOWS;HAVE_CONFIG_H;COIN_INTERNAL;COIN_DEBUG=1;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;COIN_MAKE_DLL;YY_NO_UNISTD_H;Coin_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>COIN_INTERNAL;XML_STATIC;WIN32;_WINDOWS;HAVE_CONFIG_H;COIN_INTERNAL;COIN_DEBUG=1;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;YY_NO_UNISTD_H</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>libexpat.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
@@ -85,7 +85,7 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>XML_STATIC;WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;COIN_INTERNAL;COIN_DEBUG=0;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;COIN_MAKE_DLL;YY_NO_UNISTD_H;Coin_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>COIN_INTERNAL;XML_STATIC;WIN32;_WINDOWS;HAVE_CONFIG_H;COIN_INTERNAL;COIN_DEBUG=0;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;YY_NO_UNISTD_H;NDEBUG</PreprocessorDefinitions>
       <DebugInformationFormat>
       </DebugInformationFormat>
     </ClCompile>
