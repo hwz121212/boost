@@ -1285,9 +1285,6 @@
     <ClCompile Include="src\glue\normalization_cubemap.cpp">
       <Filter>Source Files\glue</Filter>
     </ClCompile>
-    <ClCompile Include="src\io\SoInput.cpp">
-      <Filter>Source Files\io</Filter>
-    </ClCompile>
     <ClCompile Include="src\io\SoInputP.cpp">
       <Filter>Source Files\io</Filter>
     </ClCompile>
@@ -2697,6 +2694,9 @@
     </ClCompile>
     <ClCompile Include="src\soscxml\eval-coin.cpp">
       <Filter>Source Files\soscxml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\io\SoInput.cpp">
+      <Filter>Source Files\io</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

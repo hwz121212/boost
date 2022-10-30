@@ -102,6 +102,7 @@
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\io\SoInput.cpp" />
     <ClCompile Include="src\tidbits.cpp" />
     <ClCompile Include="src\xml\document.cpp" />
     <ClCompile Include="src\xml\element.cpp" />
@@ -536,7 +537,6 @@
       <ObjectFileName>$(IntDir)/glue/freetype.cpp.obj</ObjectFileName>
     </ClCompile>
     <ClCompile Include="src\glue\normalization_cubemap.cpp" />
-    <ClCompile Include="src\io\SoInput.cpp" />
     <ClCompile Include="src\io\SoInputP.cpp" />
     <ClCompile Include="src\io\SoInput_FileInfo.cpp" />
     <ClCompile Include="src\io\SoInput_Reader.cpp" />
