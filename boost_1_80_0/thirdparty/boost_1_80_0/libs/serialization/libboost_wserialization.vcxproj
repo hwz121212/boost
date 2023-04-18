@@ -82,19 +82,19 @@
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\serialization\src\basic_text_wiprimitive.cpp" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\serialization\src\basic_text_woprimitive.cpp" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\serialization\src\binary_wiarchive.cpp" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\serialization\src\binary_woarchive.cpp" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\serialization\src\polymorphic_text_wiarchive.cpp" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\serialization\src\polymorphic_text_woarchive.cpp" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\serialization\src\polymorphic_xml_wiarchive.cpp" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\serialization\src\polymorphic_xml_woarchive.cpp" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\serialization\src\text_wiarchive.cpp" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\serialization\src\text_woarchive.cpp" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\serialization\src\xml_wgrammar.cpp" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\serialization\src\xml_wiarchive.cpp" />
-    <ClCompile Include="E:\hanwenzhi_code\boost_1_79_0\backup\boost_1_80_0\libs\serialization\src\xml_woarchive.cpp" />
+    <ClCompile Include="src\basic_text_wiprimitive.cpp" />
+    <ClCompile Include="src\basic_text_woprimitive.cpp" />
+    <ClCompile Include="src\binary_wiarchive.cpp" />
+    <ClCompile Include="src\binary_woarchive.cpp" />
+    <ClCompile Include="src\polymorphic_text_wiarchive.cpp" />
+    <ClCompile Include="src\polymorphic_text_woarchive.cpp" />
+    <ClCompile Include="src\polymorphic_xml_wiarchive.cpp" />
+    <ClCompile Include="src\polymorphic_xml_woarchive.cpp" />
+    <ClCompile Include="src\text_wiarchive.cpp" />
+    <ClCompile Include="src\text_woarchive.cpp" />
+    <ClCompile Include="src\xml_wgrammar.cpp" />
+    <ClCompile Include="src\xml_wiarchive.cpp" />
+    <ClCompile Include="src\xml_woarchive.cpp" />
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
